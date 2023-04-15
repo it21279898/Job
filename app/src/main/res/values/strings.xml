@@ -1,3 +1,50 @@
 <resources>
-    <string name="app_name">Job</string>
+    <string name="app_name">Quick Jobs</string>
+    <string name="started_title">Quick Jobs</string>
+    <string name="stared_sub_title">
+        Nice to meet you,come join our community!
+        <br><b>Login</b> if you already have an account.</br>
+        <br><b>Register</b> to get started with the app.</br>
+    </string>
+    <string name="illustration_img" />
+    <string name="btn_register">Register</string>
+    <string name="btn_login">Login</string>
+    <string name="login_title">Login to app</string>
+    <string name="login_sub_title">
+ <font color="#00C9B8"><b>Login</b></font> if you already have an account.
+
+    </string>
+    <string name="login_password">Your Password</string>
+    <string name="login_forgot_pw">Forgot Password</string>
+    <string name="login_havent_account">I don\'t have account
+    <font color="#00C9B8"><b>Register</b></font>
+    </string>
+
+    <string name="register_title">Create an account</string>
+
+    <string name="register_sub_title">
+        <font color="#00C988"><b>Register</b></font> to get stared with the app.
+    </string>
+    <string name="register_fullname">Your Fullname</string>
+    <string name="register_email">Your email</string>
+    <string name="register_username">Your username</string>
+    <string name="register_comfirm_password">comfirm password</string>
+    <string name="register_have_account">
+        I already have an account
+        <font color="#00C9B8"><b>Login</b></font>
+    </string>
+    <string name="home_title">Hello World!</string>
+    <string name="home_sub_title">Welcome to Home</string>
+    <string name="btn_logout">Logout</string>
+    <string name="reset_pw_title">Reset your password</string>
+    <string name="reset_pw_sub_title">
+<font color="00C988">Reset Password</font> If you forget your password.
+    </string>
+    <string name="btn_reset_pw">Reset Password</string>
+    <string name="back_to_login">Back to <font color="#00C9B8"><b>Login</b></font>
+    </string>
+
+    <string name="tv_Calculation_title">Salary Calculation</string>
+    <string name="salary_calculation">Salary Calculation</string>
+
 </resources>
