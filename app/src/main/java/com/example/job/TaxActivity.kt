@@ -20,6 +20,13 @@ class TaxActivity : AppCompatActivity() {
         val b1 = findViewById(R.id.btn1) as Button
         val b2 = findViewById(R.id.btn2) as Button
 
+        b2.setOnClickListener {
+            salary.setText("")
+            tax.setText("")
+            netsal.setText("")
+            salary.requestFocus()
+        }
+
         b1.setOnClickListener {
             val va11 =salary.text.toString().toInt()
             val va12 :Double
