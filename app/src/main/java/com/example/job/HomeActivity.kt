@@ -17,6 +17,10 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btnTax.setOnClickListener{
+            startActivity(Intent(this,TaxActivity::class.java))
+        }
+
         auth= FirebaseAuth.getInstance()
 
         binding.btnLogout.setOnClickListener{
