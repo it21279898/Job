@@ -10,6 +10,8 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.example.job.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.jakewharton.rxbinding2.widget.RxTextView
 
 @SuppressLint("CheckResult")
@@ -17,12 +19,18 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
     private lateinit var auth:FirebaseAuth
 
+    var firebaseDatabase: FirebaseDatabase?=null
+    var reference : DatabaseReference?=null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-    auth= FirebaseAuth.getInstance()
+        firebaseDatabase= FirebaseDatabase.getInstance()
+        reference=firebaseDatabase!!.getReference("User")
+
+        auth= FirebaseAuth.getInstance(  )
 
 // fullname validation
         val nameStream = RxTextView.textChanges(binding.etFullname)
@@ -106,6 +114,15 @@ class RegisterActivity : AppCompatActivity() {
 
 
         binding.btnRegister.setOnClickListener{
+
+            val regname=binding.etFullname.text.toString()
+            val regemail=binding.etEmail.text.toString()
+            val regusername=binding.etUsername.text.toString()
+            val regpassword=binding.etPassword.text.toString()
+
+            var user = UserHelperClass(regusername,regemail,regusername,regpassword)
+
+            reference!!.child(regname).setValue(user)
             val email = binding.etEmail.text.toString().trim()
             val password = binding.etPassword.text.toString().trim()
             registerUser(email,password)
