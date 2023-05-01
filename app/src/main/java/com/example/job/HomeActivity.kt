@@ -3,6 +3,7 @@ package com.example.job
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import com.example.job.databinding.ActivityHomeBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -22,6 +23,13 @@ class HomeActivity : AppCompatActivity() {
         }
 
         auth= FirebaseAuth.getInstance()
+
+        // Redirect to add new job
+        val redirectToAddNewJob = findViewById<Button>(R.id.btnAddJob);
+        redirectToAddNewJob.setOnClickListener {
+            val intent = Intent(this, AddNewJob::class.java)
+            startActivity(intent)
+        }
 
         binding.btnLogout.setOnClickListener{
             auth.signOut()
