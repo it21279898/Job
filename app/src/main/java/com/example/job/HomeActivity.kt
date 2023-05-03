@@ -20,6 +20,9 @@ class HomeActivity : AppCompatActivity() {
         binding.btnTax.setOnClickListener{
             startActivity(Intent(this,TaxActivity::class.java))
         }
+        binding.btnProfile.setOnClickListener{
+            startActivity(Intent(this,profileActivity::class.java))
+        }
 
         auth= FirebaseAuth.getInstance()
 
