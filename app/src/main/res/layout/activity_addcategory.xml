@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbarSl"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="#00C988"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-2dp">
+
+
+        <!--Back bottom-->
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="62dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/todo2"
+            android:padding="5dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/backBtn"
+            android:src="@drawable/logo_cate"
+            android:contentDescription="@string/todo" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:contentDescription="@string/todo1" />
+
+        <TextView
+            android:id="@+id/iconIv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp"
+            android:fontFamily="sans-serif-condensed"
+            android:scrollbarSize="28sp"
+            android:text="@string/add_a_new_category"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+    <!--Input category-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/categoryTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="225dp"
+        app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/categoryEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:drawableStart="@drawable/ic_category_gray"
+            android:drawablePadding="10dp"
+            android:hint="@string/category_title"
+            android:inputType="textPersonName|textCapSentences"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="#616161"
+            tools:ignore="VisualLintTextFieldSize" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Add category button-->
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/categoryTil"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/submit"
+        android:textColor="#424242"
+        tools:ignore="TextSizeCheck,VisualLintButtonSize" />
+</RelativeLayout>
