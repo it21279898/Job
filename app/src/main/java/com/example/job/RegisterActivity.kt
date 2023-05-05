@@ -32,7 +32,7 @@ class RegisterActivity : AppCompatActivity() {
 
         auth= FirebaseAuth.getInstance(  )
 
-// fullname validation
+        // fullname validation
         val nameStream = RxTextView.textChanges(binding.etFullname)
             .skipInitialValue()
             .map { name->
@@ -115,14 +115,17 @@ class RegisterActivity : AppCompatActivity() {
 
         binding.btnRegister.setOnClickListener{
 
-            val regname=binding.etFullname.text.toString()
-            val regemail=binding.etEmail.text.toString()
-            val regusername=binding.etUsername.text.toString()
-            val regpassword=binding.etPassword.text.toString()
 
-            var user = UserHelperClass(regusername,regemail,regusername,regpassword)
+            val database = firebaseDatabase!!.getReference("User")
+            val uid = generateUniqueId(database);
+            val rename=binding.etFullname.text.toString()
+            val reemail=binding.etEmail.text.toString()
+            val reusername=binding.etUsername.text.toString()
+            val repassword=binding.etPassword.text.toString()
 
-            reference!!.child(regname).setValue(user)
+            var User = UserHelperClass(rename,reemail,reusername,repassword,uid)
+
+            reference!!.child(uid).setValue(User)
             val email = binding.etEmail.text.toString().trim()
             val password = binding.etPassword.text.toString().trim()
             registerUser(email,password)
@@ -159,5 +162,10 @@ class RegisterActivity : AppCompatActivity() {
                     Toast.makeText(this,it.exception?.message,Toast.LENGTH_SHORT).show()
                 }
             }
+    }
+
+    fun generateUniqueId(databaseRef: DatabaseReference): String {
+        val newRef = databaseRef.push()
+        return newRef.key ?: ""
     }
 }

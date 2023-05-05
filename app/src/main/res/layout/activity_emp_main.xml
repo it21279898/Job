@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".EmpMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar02">
+
+
+        <ImageButton
+            android:id="@+id/backBtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back_white" />
+
+        <TextView
+            android:id="@+id/toolbarTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Add New Members"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/illustration_started" />
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Upload"
+            android:id="@+id/mainupload"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/primary_color"
+            app:cornerRadius = "20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="search"
+            android:id="@+id/mainsearch"
+            android:textSize="18sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/primary_color"
+            app:cornerRadius = "20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:text="Update"
+                android:id="@+id/mainUpdate"
+                android:textSize="18sp"
+                android:padding="16dp"
+                app:strokeColor="@color/primary_color"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/primary_color"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                app:cornerRadius = "20dp"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:text="Delete"
+                android:id="@+id/mainDelete"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/primary_color"
+                app:strokeWidth="2dp"
+                app:strokeColor="@color/primary_color"
+                app:cornerRadius = "20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>"
+
+</LinearLayout>

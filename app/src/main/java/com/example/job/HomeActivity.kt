@@ -24,6 +24,10 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this,profileActivity::class.java))
         }
 
+        binding.btnEmp.setOnClickListener{
+            startActivity(Intent(this,EmpMainActivity::class.java))
+        }
+
         auth= FirebaseAuth.getInstance()
 
         binding.btnLogout.setOnClickListener{
@@ -36,4 +40,11 @@ class HomeActivity : AppCompatActivity() {
 
         }
     }
+
+
+
+
+
+
+
 }

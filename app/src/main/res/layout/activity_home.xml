@@ -27,5 +27,11 @@
         android:layout_height="wrap_content"
         android:text="Profile" />
 
+    <Button
+        android:id="@+id/btn_Emp"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:text="EMP" />
+
 
 </LinearLayout>

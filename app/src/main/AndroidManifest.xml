@@ -12,6 +12,21 @@
         android:theme="@style/Theme.Job"
         tools:targetApi="31">
         <activity
+            android:name=".ReadDataEmpActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".activity_deleteEmp"
+            android:exported="false" />
+        <activity
+            android:name=".activity_updateEmp"
+            android:exported="false" />
+        <activity
+            android:name=".UploadEmpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmpMainActivity"
+            android:exported="false"/>
+        <activity
             android:name=".ProfileUpdateActivity"
             android:exported="false" />
         <activity
@@ -40,6 +55,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
