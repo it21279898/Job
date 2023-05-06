@@ -17,7 +17,7 @@
         <activity
             android:name=".Tn_fetchData"
             android:exported="false"/>
-
+        <activity
             android:name=".Tn_jobApplication"
             android:exported="false" />
         <activity
