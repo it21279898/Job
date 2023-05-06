@@ -11,6 +11,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Job"
         tools:targetApi="31">
+        <activity
+            android:name=".Tn_fetchData"
+            android:exported="false" />
+        <activity
+            android:name=".Tn_ApplicantDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Tn_jobApplicationHome"
+            android:exported="false" />
+
+        <activity
+            android:name=".Tn_jobApplication"
+            android:exported="false" />
 
         <activity
             android:name=".TaxActivity"
