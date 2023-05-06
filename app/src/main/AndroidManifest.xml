@@ -11,7 +11,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Job"
         tools:targetApi="31">
+        <activity
+            android:name=".Tn_ApplicantDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Tn_fetchData"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Tn_jobApplication"
+            android:exported="false" />
+        <activity
+            android:name=".Tn_jobApplicationHome"
+            android:exported="false" />
         <activity
             android:name=".TaxActivity"
             android:exported="false" />
@@ -29,13 +46,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>
