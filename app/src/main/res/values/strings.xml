@@ -46,6 +46,12 @@
 
     <string name="tv_Calculation_title">Salary Calculation</string>
     <string name="salary_calculation">Salary Calculation</string>
+    <string name="todo">TODO</string>
+    <string name="add_a_new_category">Add a New Category</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="category_title">Category Title</string>
+    <string name="submit">Submit</string>
     <string name="tv_header">Quick Job</string>
     <string name="tv_tv1">Did you find your dream job</string>
     <string name="btn_apply">APPLY NOW</string>
