@@ -21,6 +21,12 @@
         android:layout_width="128dp"
         android:layout_height="wrap_content"
         android:text="Tax" />
+    <Button
+        android:id="@+id/btn_testApply"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:text="Apply" />
+
 
 
 </LinearLayout>
