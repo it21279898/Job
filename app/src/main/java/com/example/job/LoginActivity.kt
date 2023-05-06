@@ -45,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
             showTextMinimalAlert(it,"Password")
         }
 
-        //button enable true or false 1
+        //button enable true or false
         val invalidFieldsStream = io.reactivex.Observable.combineLatest(
 
             usernameSteam,

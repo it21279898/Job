@@ -43,10 +43,10 @@
     <string name="btn_reset_pw">Reset Password</string>
     <string name="back_to_login">Back to <font color="#00C9B8"><b>Login</b></font>
     </string>
-
+    <!--  Jobs Publish | Nipuni  -->
     <string name="tv_Calculation_title">Salary Calculation</string>
     <string name="salary_calculation">Salary Calculation</string>
-    <string name="job_one">Job 1</string>
+    <string name="all_jobs">All Jobs</string>
     <string name="calculate_salary">Calculate your Salary</string>
     <string name="edit_job_info">Edit Job Info</string>
     <string name="basic_sal">Basic Salary</string>
@@ -59,9 +59,11 @@
     <string name="submit_btn">Submit</string>
     <string name="del_Btn">Delete</string>
     <string name="Add_new_Job">Add a new Job</string>
+    <string name="edit_job">Edit Job</string>
     <string name="job_title">Job title</string>
     <string name="Add_des">Description</string>
     <string name="sub_Btn">Submit</string>
+    <string name="job_update">Update</string>
     <string name="all_Jobs">All Jobs</string>
     <string name="view">View</string>
     <string name="title_here">Title here</string>

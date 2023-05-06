@@ -24,11 +24,11 @@ class HomeActivity : AppCompatActivity() {
 
         auth= FirebaseAuth.getInstance()
 
-        // Redirect to add new job
-        val redirectToAddNewJob = findViewById<Button>(R.id.btnAddJob);
-        redirectToAddNewJob.setOnClickListener {
-            val intent = Intent(this, AddNewJob::class.java)
-            startActivity(intent)
+        // Redirect to all jobs
+        val redirectToAllJobs = findViewById<Button>(R.id.btnAllJobs);
+        redirectToAllJobs.setOnClickListener {
+            val intent = Intent(this, AllJobs::class.java);
+            startActivity(intent);
         }
 
         binding.btnLogout.setOnClickListener{
