@@ -52,5 +52,12 @@
     <string name="todo2">TODO</string>
     <string name="category_title">Category Title</string>
     <string name="submit">Submit</string>
+    <string name="todo33">TODO</string>
+    <string name="update_category">Update Category</string>
+    <string name="todo44">TODO</string>
+    <string name="current_category_title">Current Category Title</string>
+    <string name="new_title">New Title</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
 
 </resources>
