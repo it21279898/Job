@@ -27,6 +27,16 @@ class Tn_ApplicantDetails : AppCompatActivity() {
     }
 
     private fun initView(){
+        tvApplicantId = findViewById(R.id.tvID)
+        tvName = findViewById(R.id.tvName)
+        tvEmail = findViewById(R.id.tvEmail)
+        tvNumber = findViewById(R.id.tvPhoneNo)
+        tvJobName = findViewById(R.id.tvJob)
+        tvPosition = findViewById(R.id.tvPosition)
+        tvStatus  = findViewById(R.id.tvStatus)
+
+        btnUpdate = findViewById(R.id.btnUpdate)
+        btnDelete = findViewById(R.id.btnDelete)
 
     }
 
