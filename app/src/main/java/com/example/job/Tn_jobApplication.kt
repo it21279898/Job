@@ -37,12 +37,8 @@ class Tn_jobApplication : AppCompatActivity() {
             saveApplicantData()
         }
     }
-
     private fun saveApplicantData(){
-
-
         //getting values
-
         val name = etName.text.toString()
         val email = etEmail.text.toString()
         val phone = etPhoneNo.text.toString()
@@ -75,7 +71,7 @@ class Tn_jobApplication : AppCompatActivity() {
         val applicant = Tn_ApplicantModel(applicantId,name,email,phone,job,position,status)
 
         dbRef.child(applicantId).setValue(applicant)
-            .addOnCanceledListener {
+            .addOnCompleteListener() {
                 Toast.makeText(this,"Data inserted successfully", Toast.LENGTH_LONG).show()
 
                 etName.text.clear()
