@@ -18,13 +18,13 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="64dp"
+            android:layout_width="289dp"
+            android:layout_height="55dp"
             android:layout_marginStart="65dp"
             android:layout_marginTop="25dp"
             android:text="@string/tv_title"
             android:textAlignment="center"
-            android:textSize="40sp" />
+            android:textSize="30sp" />
     </LinearLayout>
 
     <TextView
