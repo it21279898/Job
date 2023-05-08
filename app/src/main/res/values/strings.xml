@@ -43,9 +43,33 @@
     <string name="btn_reset_pw">Reset Password</string>
     <string name="back_to_login">Back to <font color="#00C9B8"><b>Login</b></font>
     </string>
-
+    <!--  Jobs Publish | Nipuni  -->
     <string name="tv_Calculation_title">Salary Calculation</string>
     <string name="salary_calculation">Salary Calculation</string>
+
+    <string name="all_jobs">All Jobs</string>
+    <string name="calculate_salary">Calculate your Salary</string>
+    <string name="edit_job_info">Edit Job Info</string>
+    <string name="basic_sal">Basic Salary</string>
+    <string name="Title1">Title here</string>
+    <string name="Edit_btn1">Edit</string>
+    <string name="Epf">EPF</string>
+    <string name="Cal_btn1">Calculate</string>
+    <string name="Job_title_Edit">Job title</string>
+    <string name="edit_Des">Description</string>
+    <string name="submit_btn">Submit</string>
+    <string name="del_Btn">Delete</string>
+    <string name="Add_new_Job">Add a new Job</string>
+    <string name="edit_job">Edit Job</string>
+    <string name="job_title">Job title</string>
+    <string name="Add_des">Description</string>
+    <string name="sub_Btn">Submit</string>
+    <string name="job_update">Update</string>
+    <string name="all_Jobs">All Jobs</string>
+    <string name="view">View</string>
+    <string name="title_here">Title here</string>
+    <string name="des_here">Description here</string>
+
     <string name="todo">TODO</string>
     <string name="add_a_new_category">Add a New Category</string>
     <string name="todo1">TODO</string>
@@ -78,5 +102,6 @@
     <string name="tv_status">Current employment status :</string>
     <string name="et_status" />
     <string name="btn_submit">SUBMIT</string>
+
 
 </resources>

@@ -11,7 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Job"
         tools:targetApi="31">
-
+        <activity
+            android:name=".EditJob"
+            android:exported="false" />
+        <activity
+            android:name=".AllJobs"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewJob"
+            android:exported="false" />
         <activity
  
             android:name=".ReadDataEmpActivity2"

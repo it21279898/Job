@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.example.job.databinding.ActivityLoginBinding
@@ -21,8 +23,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //Auth
-
-        auth= FirebaseAuth.getInstance()
+        auth = FirebaseAuth.getInstance()
 
         //username validation
         val usernameSteam = RxTextView.textChanges(binding.etEmail)

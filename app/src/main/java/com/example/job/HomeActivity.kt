@@ -40,6 +40,13 @@ class HomeActivity : AppCompatActivity() {
 
         auth= FirebaseAuth.getInstance()
 
+        // Redirect to all jobs
+        val redirectToAllJobs = findViewById<Button>(R.id.btnAllJobs);
+        redirectToAllJobs.setOnClickListener {
+            val intent = Intent(this, AllJobs::class.java);
+            startActivity(intent);
+        }
+
         binding.btnLogout.setOnClickListener{
             auth.signOut()
             Intent(this,LoginActivity::class.java).also {
