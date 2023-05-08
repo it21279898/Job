@@ -81,11 +81,6 @@ class Tn_ApplicantDetails : AppCompatActivity() {
         tvPosition.text = intent.getStringExtra("position")
         tvStatus.text = intent.getStringExtra("status")
 
-
-
-
-
-
     }
     private fun openUpdateDialog(
         applicantId : String,

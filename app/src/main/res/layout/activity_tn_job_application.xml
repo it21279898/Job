@@ -35,16 +35,16 @@
         android:layout_marginTop="128dp"
         android:text="@string/tv_name"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_name"
-        android:layout_width="390dp"
-        android:layout_height="51dp"
+        android:layout_width="377dp"
+        android:layout_height="52dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="148dp"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
@@ -60,13 +60,13 @@
         android:layout_marginTop="220dp"
         android:text="@string/tv_email"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_email"
-        android:layout_width="390dp"
+        android:layout_width="381dp"
         android:layout_height="51dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="252dp"
@@ -85,14 +85,14 @@
         android:layout_marginTop="308dp"
         android:text="@string/tv_phoneNo"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_phoneNo"
-        android:layout_width="390dp"
-        android:layout_height="51dp"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="340dp"
         android:ems="10"
@@ -107,19 +107,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="404dp"
         android:text="@string/tv_jobName"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_jobName"
-        android:layout_width="390dp"
-        android:layout_height="51dp"
+        android:layout_width="379dp"
+        android:layout_height="48dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="432dp"
+        android:layout_marginTop="428dp"
         android:ems="10"
         android:hint="job name"
         android:inputType="textPersonName"
@@ -135,13 +135,13 @@
         android:layout_marginTop="488dp"
         android:text="@string/tv_position"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_position"
-        android:layout_width="390dp"
+        android:layout_width="379dp"
         android:layout_height="51dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="520dp"
@@ -160,14 +160,14 @@
         android:layout_marginTop="576dp"
         android:text="@string/tv_status"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_status"
-        android:layout_width="390dp"
-        android:layout_height="51dp"
+        android:layout_width="375dp"
+        android:layout_height="53dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="608dp"
         android:ems="10"
