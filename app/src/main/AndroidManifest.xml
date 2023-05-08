@@ -21,11 +21,71 @@
             android:name=".AddNewJob"
             android:exported="false" />
         <activity
+ 
+            android:name=".ReadDataEmpActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".activity_deleteEmp"
+            android:exported="false" />
+        <activity
+            android:name=".activity_updateEmp"
+            android:exported="false" />
+        <activity
+            android:name=".UploadEmpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmpMainActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ProfileUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TaxActivity"
+ 
+            android:name=".Tn_fetchData"
+ 
+            android:exported="false" />
+        <activity
+            android:name=".Tn_ApplicantDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Tn_jobApplicationHome"
+            android:exported="false"/> >
+
+
+        <activity
+            android:name=".Tn_jobApplication"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".Allcategory"
+            android:exported="false" />
+
+
+            android:name=".Editcategory"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+            android:name=".Addcategory"
+            android:exported="false" />
+
+
+        <activity
             android:name=".TaxActivity"
             android:exported="false" />
         <activity
             android:name=".ResetPasswordActivity"
             android:exported="false" />
+        <activity
+            android:name=".Addcategory"
+            android:exported="false"/>
+
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
@@ -37,13 +97,26 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+
+ 
+ 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+ 
+ 
+            android:exported="false" />
+
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+ 
         </activity>
+
+
     </application>
 
 </manifest>

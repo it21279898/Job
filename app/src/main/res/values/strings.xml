@@ -46,6 +46,7 @@
     <!--  Jobs Publish | Nipuni  -->
     <string name="tv_Calculation_title">Salary Calculation</string>
     <string name="salary_calculation">Salary Calculation</string>
+
     <string name="all_jobs">All Jobs</string>
     <string name="calculate_salary">Calculate your Salary</string>
     <string name="edit_job_info">Edit Job Info</string>
@@ -68,4 +69,39 @@
     <string name="view">View</string>
     <string name="title_here">Title here</string>
     <string name="des_here">Description here</string>
+
+    <string name="todo">TODO</string>
+    <string name="add_a_new_category">Add a New Category</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="category_title">Category Title</string>
+    <string name="submit">Submit</string>
+
+    <string name="todo33">TODO</string>
+    <string name="update_category">Update Category</string>
+    <string name="todo44">TODO</string>
+    <string name="current_category_title">Current Category Title</string>
+    <string name="new_title">New Title</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+
+    <string name="tv_header">Quick Job</string>
+    <string name="tv_tv1">Did you find your dream job</string>
+    <string name="btn_apply">APPLY NOW</string>
+    <string name="btn_fetch">VIEW APPLICANTS</string>
+    <string name="tv_title">Job Application</string>
+    <string name="tv_name">Name :</string>
+    <string name="et_name" />
+    <string name="tv_email">Email :</string>
+    <string name="et_email" />
+    <string name="tv_phoneNo">Phone number :</string>
+    <string name="et_phoneNo" />
+    <string name="tv_jobName">Name of the job :</string>
+    <string name="et_jobName" />
+    <string name="tv_position">What position are you applying for :</string>
+    <string name="tv_status">Current employment status :</string>
+    <string name="et_status" />
+    <string name="btn_submit">SUBMIT</string>
+
+
 </resources>
