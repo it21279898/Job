@@ -50,7 +50,7 @@ class Editcategory : AppCompatActivity() {
                 }
 
             // Redirect to the all categories activity
-            startActivity(Intent(this, Allcategory::class.java))
+//            startActivity(Intent(this, Allcategory::class.java))
         }
 
         // Delete job
@@ -63,7 +63,7 @@ class Editcategory : AppCompatActivity() {
 
             Toast.makeText(this,"Category successfully deleted", Toast.LENGTH_SHORT).show()
             // Redirect to the all category activity
-            startActivity(Intent(this, Allcategory::class.java))
+//            startActivity(Intent(this, Allcategory::class.java))
         }
     }
 }
