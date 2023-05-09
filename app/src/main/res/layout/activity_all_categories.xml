@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="410dp"
+        android:layout_height="100dp"
+        android:background="#00C988"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/ctatxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:scrollbarSize="28sp"
+            android:shadowColor="@color/black"
+            android:text="CATEGORIES"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="198dp"
+        android:layout_height="222dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/img"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="160dp"
+        android:contentDescription="button22"/>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="200dp"
+        android:layout_height="225dp"
+        android:layout_marginBottom="224dp"
+        android:contentDescription="imgbuton33"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:srcCompat="@drawable/education_and_teaching" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="200dp"
+        android:layout_height="225dp"
+        android:contentDescription="button44"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:srcCompat="@drawable/it"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="200dp"
+        android:layout_height="225dp"
+        android:contentDescription="button55"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/sales_and_marketing_jobs"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="382dp" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="294dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#00C988"
+        android:text="+ Add Category"
+        android:textColor="#424242"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Sales and Marketing Job"
+        android:textColor="@color/material_dynamic_secondary10"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Creative and Design Job"
+        android:textColor="@color/material_dynamic_secondary10"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Education and Teaching Job"
+        android:textColor="@color/material_dynamic_secondary10"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+    <TextView
+        android:id="@+id/name3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Technology and IT Job"
+        android:textColor="@color/material_dynamic_secondary10"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <SearchView
+        android:layout_width="406dp"
+        android:layout_height="40dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <ImageButton
+        android:id="@+id/del1"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:contentDescription="delete12"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        tools:ignore="MissingConstraints,ImageContrastCheck"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <ImageButton
+        android:id="@+id/del3"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:contentDescription="delete33"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        tools:ignore="MissingConstraints,ImageContrastCheck"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="555dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:contentDescription="delete44"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="325dp"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <ImageButton
+        android:id="@+id/edit1"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:contentDescription="edit12"
+        app:layout_constraintEnd_toStartOf="@+id/del1"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        tools:ignore="MissingConstraints,ImageContrastCheck"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <ImageButton
+        android:id="@+id/edit2"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:contentDescription="edit22"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        tools:ignore="MissingConstraints,ImageContrastCheck"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+
+    <ImageButton
+        android:id="@+id/edit3"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:contentDescription="edit33"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        tools:ignore="MissingConstraints,ImageContrastCheck"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="555dp" />
+
+    <ImageButton
+        android:id="@+id/edit4"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:contentDescription="edit44"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        tools:ignore="MissingConstraints,ImageContrastCheck"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <ImageButton
+        android:id="@+id/del2"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:contentDescription="delete22"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        tools:ignore="MissingConstraints,ImageContrastCheck"
+        tools:layout_editor_absoluteX="325dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

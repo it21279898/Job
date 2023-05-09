@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/home"
+            android:icon="@drawable/na_home"/>
+
+        <item
+            android:id="@+id/nav_cal"
+            android:title="@string/setting"
+            android:icon="@drawable/baseline_settings_24"/>
+
+    </group>
+
+    <item android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:title="@string/profile"
+                android:icon="@drawable/baseline_profile"/>
+
+            <item
+                android:id="@+id/nav_login"
+                android:title="@string/login"
+                android:icon="@drawable/na_login"/>
+
+
+
+        </menu>
+
+    </item>
+
+    <item android:title="">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_notification"
+                android:title="@string/notification"
+                android:icon="@drawable/na_notifications"/>
+
+        </menu>
+
+    </item>
+
+</menu>
