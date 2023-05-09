@@ -29,6 +29,20 @@
             android:textSize="28dp" />
 
     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_view_border"/>
+    </RelativeLayout>
     <!--Input title-->
     <ScrollView
         android:layout_width="match_parent"
@@ -52,7 +66,6 @@
 
         </LinearLayout>
     </ScrollView>
-
     <!-- Add New Job -->
     <LinearLayout
         android:layout_width="match_parent"

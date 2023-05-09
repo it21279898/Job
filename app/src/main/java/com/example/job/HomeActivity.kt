@@ -23,15 +23,15 @@ class HomeActivity : AppCompatActivity() {
         binding.btnTax.setOnClickListener{
             startActivity(Intent(this,TaxActivity::class.java))
         }
-        binding.btnProfile.setOnClickListener{
-            startActivity(Intent(this,profileActivity::class.java))
-        }
+//        binding.btnProfile.setOnClickListener{
+//            startActivity(Intent(this,profileActivity::class.java))
+//        }
 
         binding.btnEmp.setOnClickListener{
             startActivity(Intent(this,EmpMainActivity::class.java))
         }
 
-        btnApply = findViewById(R.id.btn_testApply)
+//        btnApply = findViewById(R.id.btn_testApply)
 
         btnApply.setOnClickListener {
             val intent = Intent(this,Tn_jobApplicationHome::class.java)

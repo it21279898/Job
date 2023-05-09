@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Job"
         tools:targetApi="31">
         <activity
-            android:name=".CvApplicationHome"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +23,12 @@
 
         <activity
             android:name=".CvFetchData"
+            android:exported="false"/>
+        <activity
+            android:name=".CvApplicationHome"
+            android:exported="false"/>
+        <activity
+            android:name=".EditJob"
             android:exported="false" />
         <activity
             android:name=".CvDetails"
@@ -35,10 +41,34 @@
         <activity
             android:name=".Navhome"
             android:exported="false" />
+        <activity
+            android:name=".ReadDataEmpActivity2"
+            android:exported="false" />
 
         <!-- <activity -->
         <!-- android:name=".Navbar_Home" -->
         <!-- android:exported="false" /> -->
+        <activity
+            android:name=".activity_deleteEmp"
+            android:exported="false" />
+        <activity
+            android:name=".activity_updateEmp"
+            android:exported="false" />
+        <activity
+            android:name=".UploadEmpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmpMainActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ProfileUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TaxActivity"
+            android:exported="false" />
         <activity
             android:name=".Tn_fetchData"
             android:exported="false" />
@@ -55,13 +85,10 @@
             android:name=".Editcategory"
             android:exported="false" />
         <activity
-            android:name=".TaxActivity"
+            android:name=".Addcategory"
             android:exported="false" />
         <activity
             android:name=".ResetPasswordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Addcategory"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
@@ -70,11 +97,7 @@
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="false" />
     </application>
-
 </manifest>
