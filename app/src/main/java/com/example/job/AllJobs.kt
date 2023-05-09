@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -60,5 +61,40 @@ class AllJobs : AppCompatActivity() {
             val intent = Intent(this, AddNewJob::class.java)
             startActivity(intent)
         }
+
+        // Set up a listener to handle search queries
+        val searchView = findViewById<SearchView>(R.id.searchView);
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                // Handle search query submission
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                // Handle search query text changes
+                // Filter the results based on the user's search query
+                databaseRef.orderByChild("name")
+                    .startAt(newText)
+                    .endAt("$newText\uf8ff")
+                    .addListenerForSingleValueEvent(object : ValueEventListener {
+                        override fun onDataChange(snapshot: DataSnapshot) {
+                            jobList.clear();
+                            for (jobSnapshot in snapshot.children) {
+                                val job = jobSnapshot.getValue(customClasses.Job::class.java);
+                                if (job != null) {
+                                    jobList.add(job);
+                                };
+                            }
+                            adapter.notifyDataSetChanged();
+                        }
+
+                        override fun onCancelled(databaseError: DatabaseError) {
+                            // Handle error
+                            println("Error on job search: " + databaseError);
+                        }
+                    })
+                return true
+            }
+        })
     }
 }
