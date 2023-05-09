@@ -1,5 +1,6 @@
 package com.example.job
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -34,6 +35,28 @@ class Tn_ApplicantDetails : AppCompatActivity() {
                 intent.getStringExtra("name").toString()
             )
         }
+
+        btnDelete.setOnClickListener {
+            deleteRecord(
+                intent.getStringExtra("applicantId").toString()
+            )
+        }
+    }
+
+    private fun deleteRecord(
+        id: String
+    ){
+        val dbRef = FirebaseDatabase.getInstance().getReference("Applicant").child(id)
+        val mTask = dbRef.removeValue()
+
+        mTask.addOnSuccessListener {
+            Toast.makeText(this,"Applicant data deleted", Toast.LENGTH_LONG).show()
+            val intent = Intent(this, Tn_fetchData::class.java )
+            finish()
+            startActivity(intent)
+        }.addOnFailureListener{ error ->
+            Toast.makeText(this,"Deleting Error ${error.message}", Toast.LENGTH_LONG).show()
+        }
     }
 
     private fun initView(){
@@ -58,15 +81,10 @@ class Tn_ApplicantDetails : AppCompatActivity() {
         tvPosition.text = intent.getStringExtra("position")
         tvStatus.text = intent.getStringExtra("status")
 
-
-
-
-
-
     }
     private fun openUpdateDialog(
         applicantId : String,
-        ApplicantName : String
+        name : String
     ){
         val mDialog = AlertDialog.Builder(this)
         val inflater = layoutInflater
@@ -90,12 +108,12 @@ class Tn_ApplicantDetails : AppCompatActivity() {
         appPosition.setText(intent.getStringExtra("position").toString())
         appStatus.setText(intent.getStringExtra("status").toString())
 
-        mDialog.setTitle("Updating $appName Record")
+        mDialog.setTitle("Updating $name Record")
 
         val alertDialog = mDialog.create()
         alertDialog.show()
 
-        btnUpdate.setOnClickListener {
+        updateBtn.setOnClickListener {
             updateApplicantData(
                 applicantId,
                 appName.text.toString(),

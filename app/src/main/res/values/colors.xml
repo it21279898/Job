@@ -10,5 +10,10 @@
     <color name="primary_color">#00C988</color>
     <color name="grey">#888888</color>
     <color name="grey_light">#F0F0F0</color>
+
+    <color name="background_main">#f6f6f6</color>
+
     <color name="divider_grey">#FDE7F1EE</color>
+ 
+
 </resources>

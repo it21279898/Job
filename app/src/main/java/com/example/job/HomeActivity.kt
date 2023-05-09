@@ -23,6 +23,13 @@ class HomeActivity : AppCompatActivity() {
         binding.btnTax.setOnClickListener{
             startActivity(Intent(this,TaxActivity::class.java))
         }
+        binding.btnProfile.setOnClickListener{
+            startActivity(Intent(this,profileActivity::class.java))
+        }
+
+        binding.btnEmp.setOnClickListener{
+            startActivity(Intent(this,EmpMainActivity::class.java))
+        }
 
         btnApply = findViewById(R.id.btn_testApply)
 
@@ -32,6 +39,13 @@ class HomeActivity : AppCompatActivity() {
         }
 
         auth= FirebaseAuth.getInstance()
+
+        // Redirect to all jobs
+        val redirectToAllJobs = findViewById<Button>(R.id.btnAllJobs);
+        redirectToAllJobs.setOnClickListener {
+            val intent = Intent(this, AllJobs::class.java);
+            startActivity(intent);
+        }
 
         binding.btnLogout.setOnClickListener{
             auth.signOut()
@@ -43,4 +57,11 @@ class HomeActivity : AppCompatActivity() {
 
         }
     }
+
+
+
+
+
+
+
 }
