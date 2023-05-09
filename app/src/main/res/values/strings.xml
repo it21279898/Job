@@ -78,5 +78,25 @@
     <string name="tv_status">Current employment status :</string>
     <string name="et_status" />
     <string name="btn_submit">SUBMIT</string>
+    <string name="search_elements">Search elements</string>
+    <string name="apply_category">apply_category</string>
+    <string name="categories">Categories</string>
+    <string name="hello">Hello</string>
+    <string name="sandu">Sandu</string>
+    <string name="apply">apply</string>
+    <string name="tax">TAX</string>
+    <string name="logout">Logout</string>
+    <string name="employee_add">Employee Add</string>
+    <string name="home">Home</string>
+    <string name="setting">Setting</string>
+    <string name="profile">Profile</string>
+    <string name="login">Login</string>
+    <string name="notification">Notification</string>
+    <string name="img_logo">img_logo</string>
+    <string name="quick_job_app">Quick Job App</string>
+    <string name="discover_your_dream_job">Discover Your Dream Job</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="btn_cvapply">cvapply</string>
 
 </resources>
