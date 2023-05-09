@@ -92,8 +92,8 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this){ login->
                 if (login.isSuccessful){
-                  Intent(this,AllJobs::class.java).also {
-                      it.flags=Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                  Intent(this, AllJobs::class.java).also {
+                      it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                       startActivity(it)
                       Toast.makeText(this,"Login successful!",Toast.LENGTH_SHORT).show()
                   }

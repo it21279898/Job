@@ -72,8 +72,9 @@ class AllJobs : AppCompatActivity() {
 
             override fun onQueryTextChange(newText: String?): Boolean {
                 // Handle search query text changes
+                println("SEARCH: " + newText);
                 // Filter the results based on the user's search query
-                databaseRef.orderByChild("name")
+                databaseRef.orderByChild("title")
                     .startAt(newText)
                     .endAt("$newText\uf8ff")
                     .addListenerForSingleValueEvent(object : ValueEventListener {
@@ -81,6 +82,7 @@ class AllJobs : AppCompatActivity() {
                             jobList.clear();
                             for (jobSnapshot in snapshot.children) {
                                 val job = jobSnapshot.getValue(customClasses.Job::class.java);
+                                println("JOB: " + job)
                                 if (job != null) {
                                     jobList.add(job);
                                 };

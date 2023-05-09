@@ -28,7 +28,13 @@
             android:name=".CvApplicationHome"
             android:exported="false"/>
         <activity
+            android:name=".AllJobs"
+            android:exported="false" />
+        <activity
             android:name=".EditJob"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewJob"
             android:exported="false" />
         <activity
             android:name=".CvDetails"
@@ -36,8 +42,6 @@
         <activity
             android:name=".cvApplication"
             android:exported="false" />
-
-
         <activity
             android:name=".Navhome"
             android:exported="false" />

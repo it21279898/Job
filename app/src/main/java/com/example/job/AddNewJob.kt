@@ -33,15 +33,19 @@ class AddNewJob : AppCompatActivity() {
             val jobTitle = findViewById<EditText>(R.id.JobTitle).text.toString();
             val jobDescription = findViewById<EditText>(R.id.description).text.toString();
 
-            val newJob = Job(jobTitle, jobDescription, jobId);
+            if (jobTitle.isEmpty() || jobDescription.isEmpty()) {
+                Toast.makeText(this,"Fields can not be empty", Toast.LENGTH_SHORT).show();
+            } else {
+                val newJob = Job(jobTitle, jobDescription, jobId);
 
-            // Store data in to database
-            database.child(jobId).setValue(newJob);
+                // Store data in to database
+                database.child(jobId).setValue(newJob);
 
-            Toast.makeText(this,"Job successfully added", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,"Job successfully added", Toast.LENGTH_SHORT).show();
 
-            // Redirect to the all jobs activity
-            startActivity(Intent(this, AllJobs::class.java));
+                // Redirect to the all jobs activity
+                startActivity(Intent(this, AllJobs::class.java));
+            }
         }
     }
 

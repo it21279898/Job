@@ -40,22 +40,27 @@ class EditJob : AppCompatActivity() {
             val jobTitle = findViewById<EditText>(R.id.JobTitle).text.toString();
             val jobDescription = findViewById<EditText>(R.id.description).text.toString();
 
-            val updateData = mapOf<String, String>("title" to jobTitle, "description" to jobDescription);
+            if (jobTitle.isEmpty() || jobDescription.isEmpty()) {
+                Toast.makeText(this,"Fields can not be empty", Toast.LENGTH_SHORT).show();
+            } else {
+                val updateData =
+                    mapOf<String, String>("title" to jobTitle, "description" to jobDescription);
 
-            // Get job data from firebase
-            var oldTitle = intent.getStringExtra("jobId").toString();
-            database.child(oldTitle).updateChildren(updateData)
-                .addOnSuccessListener {
-                    // Update successful
-                    Toast.makeText(this,"Job successfully updated", Toast.LENGTH_SHORT).show();
-                }
-                .addOnFailureListener { e ->
-                    // Update failed
-                    Toast.makeText(this,"Error on job update", Toast.LENGTH_SHORT).show();
-                }
+                // Get job data from firebase
+                var oldTitle = intent.getStringExtra("jobId").toString();
+                database.child(oldTitle).updateChildren(updateData)
+                    .addOnSuccessListener {
+                        // Update successful
+                        Toast.makeText(this, "Job successfully updated", Toast.LENGTH_SHORT).show();
+                    }
+                    .addOnFailureListener { e ->
+                        // Update failed
+                        Toast.makeText(this, "Error on job update", Toast.LENGTH_SHORT).show();
+                    }
 
-            // Redirect to the all jobs activity
-            startActivity(Intent(this, AllJobs::class.java));
+                // Redirect to the all jobs activity
+                startActivity(Intent(this, AllJobs::class.java));
+            }
         }
 
         // Delete job
@@ -69,6 +74,12 @@ class EditJob : AppCompatActivity() {
             Toast.makeText(this,"Job successfully deleted", Toast.LENGTH_SHORT).show();
             // Redirect to the all jobs activity
             startActivity(Intent(this, AllJobs::class.java));
+        }
+
+        val goBackButton = findViewById<ImageButton>(R.id.go_back_btn);
+        goBackButton.setOnClickListener {
+            val intent = Intent(this, AllJobs::class.java)
+            startActivity(intent)
         }
     }
 }
