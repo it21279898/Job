@@ -13,7 +13,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
     private lateinit var auth: FirebaseAuth
 
-    private lateinit var btnApply : Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,10 +33,10 @@ class HomeActivity : AppCompatActivity() {
 
 //        btnApply = findViewById(R.id.btn_testApply)
 
-        btnApply.setOnClickListener {
-            val intent = Intent(this,Tn_jobApplicationHome::class.java)
-            startActivity(intent)
-        }
+//        btnApply.setOnClickListener {
+//            val intent = Intent(this,Tn_jobApplicationHome::class.java)
+//            startActivity(intent)
+//        }
 
         auth= FirebaseAuth.getInstance()
 
