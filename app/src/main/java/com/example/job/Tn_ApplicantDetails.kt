@@ -129,8 +129,8 @@ class Tn_ApplicantDetails : AppCompatActivity() {
             //setting updated data to our textView
             tvName.text = appName.text.toString()
             tvEmail.text = appEmail.text.toString()
-            tvNumber.text = appEmail.text.toString()
-            tvJobName.text = appNumber.text.toString()
+            tvNumber.text = appNumber.text.toString()
+            tvJobName.text = appJob.text.toString()
             tvPosition.text = appPosition.text.toString()
             tvStatus.text = appStatus.text.toString()
 

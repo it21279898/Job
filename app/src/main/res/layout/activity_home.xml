@@ -12,42 +12,40 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_logout"
         style="@style/ButtonGreen"
-        android:layout_width="180dp"
-        android:layout_height="40dp"
+        android:layout_width="185dp"
+        android:layout_height="61dp"
         android:text="@string/btn_logout" />
 
     <Button
         android:id="@+id/btn_Tax"
         style="@style/ButtonGreen"
-        android:layout_width="180dp"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_height="40dp"
         android:text="Tax" />
+
     <Button
 
         android:id="@+id/btnAllJobs"
         style="@style/ButtonGreen"
-        android:layout_width="180dp"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_height="40dp"
         android:text="@string/all_Jobs" />
 
- 
-        android:id="@+id/btn_profile"
-        android:layout_width="128dp"
-        android:layout_height="wrap_content"
-        android:text="Profile" />
 
     <Button
         android:id="@+id/btn_Emp"
         android:layout_width="128dp"
         android:layout_height="wrap_content"
         android:text="EMP" />
- 
-        android:id="@+id/btn_testApply"
+
+    <Button
+        android:id="@+id/btn_Apply"
         android:layout_width="128dp"
         android:layout_height="wrap_content"
         android:text="Apply" />
+ 
 
  
 

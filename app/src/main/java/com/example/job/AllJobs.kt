@@ -16,9 +16,12 @@ import com.google.firebase.database.ValueEventListener
 import customClasses.JobListAdapter
 
 class AllJobs : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_all_jobs)
+
 
         // Load all the jobs
         val databaseRef = FirebaseDatabase
