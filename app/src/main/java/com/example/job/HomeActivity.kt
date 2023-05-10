@@ -30,6 +30,9 @@ class HomeActivity : AppCompatActivity() {
         binding.btnEmp.setOnClickListener{
             startActivity(Intent(this,EmpMainActivity::class.java))
         }
+        binding.btnApply.setOnClickListener{
+            startActivity(Intent(this,Tn_jobApplicationHome::class.java))
+        }
 
 //        btnApply = findViewById(R.id.btn_testApply)
 

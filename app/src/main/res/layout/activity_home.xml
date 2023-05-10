@@ -33,14 +33,18 @@
         android:layout_marginTop="8dp"
         android:text="@string/all_Jobs" />
 
- 
-
 
     <Button
         android:id="@+id/btn_Emp"
         android:layout_width="128dp"
         android:layout_height="wrap_content"
         android:text="EMP" />
+
+    <Button
+        android:id="@+id/btn_Apply"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:text="Apply" />
  
 
  
