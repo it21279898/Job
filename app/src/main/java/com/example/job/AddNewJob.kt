@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.job.databinding.ActivityLoginBinding
@@ -46,6 +47,12 @@ class AddNewJob : AppCompatActivity() {
                 // Redirect to the all jobs activity
                 startActivity(Intent(this, AllJobs::class.java));
             }
+        }
+
+        val goBackButton = findViewById<ImageButton>(R.id.go_back_btn);
+        goBackButton.setOnClickListener {
+            val intent = Intent(this, AllJobs::class.java)
+            startActivity(intent)
         }
     }
 
