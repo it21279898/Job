@@ -59,8 +59,8 @@ class CvFetchData : AppCompatActivity() {
                             intent.putExtra("name", cvList[position].name)
                             intent.putExtra("email", cvList[position].email)
                             intent.putExtra("nic", cvList[position].nic)
-                            intent.putExtra("phoneNo", cvList[position].phone)
-                            intent.putExtra("skill", cvList[position].skills)
+                            intent.putExtra("phone", cvList[position].phone)
+                            intent.putExtra("skills", cvList[position].skills)
                             intent.putExtra("education", cvList[position].education)
                             intent.putExtra("work", cvList[position].work)
 

@@ -111,10 +111,10 @@
 
             <LinearLayout
                 android:id="@+id/layoutFunction"
-                android:layout_width="0dp"
+                android:layout_width="206dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="4dp"
                 android:background="@drawable/white_rectangle_background"
                 android:gravity="center"
                 android:orientation="vertical"
@@ -212,8 +212,8 @@
 
             <LinearLayout
                 android:id="@+id/layoutPay"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="194dp"
+                android:layout_height="194dp"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/white_rectangle_background"
                 android:gravity="center"
