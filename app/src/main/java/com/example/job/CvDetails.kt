@@ -42,7 +42,7 @@ class CvDetails : AppCompatActivity() {
 
         btnDeleteS.setOnClickListener {
             deleteRecord(
-                intent.getStringExtra("tvIds").toString()
+                intent.getStringExtra("cvId").toString()
             )
         }
     }
@@ -80,7 +80,7 @@ class CvDetails : AppCompatActivity() {
         val mTask = dbRef.removeValue()
 
         mTask.addOnSuccessListener {
-            Toast.makeText(this, "User data deleted", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "CV data deleted", Toast.LENGTH_LONG).show()
 
             val intent = Intent(this, CvFetchData::class.java)
             finish()
@@ -92,7 +92,7 @@ class CvDetails : AppCompatActivity() {
 
     private fun openUpdateDialog(
         cvId : String,
-        CvName : String
+        name: String
     ){
         val mDialog = AlertDialog.Builder(this)
         val inflater = layoutInflater

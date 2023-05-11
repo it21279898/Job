@@ -23,7 +23,7 @@
             android:shadowColor="@color/black"
             android:text="CATEGORIES"
             android:textColor="@color/black"
-            android:textSize="28sp" />
+            android:textSize="24sp" />
 
     </LinearLayout>
 
@@ -92,7 +92,7 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Sales and Marketing Job"
         android:textColor="@color/material_dynamic_secondary10"
-        android:textSize="18sp"
+        android:textSize="16sp"
         tools:ignore="MissingConstraints,TextSizeCheck"
         tools:layout_editor_absoluteX="220dp"
         tools:layout_editor_absoluteY="398dp" />
@@ -104,7 +104,7 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Creative and Design Job"
         android:textColor="@color/material_dynamic_secondary10"
-        android:textSize="18sp"
+        android:textSize="16sp"
         tools:ignore="MissingConstraints,TextSizeCheck"
         tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="172dp" />
@@ -116,7 +116,7 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Education and Teaching Job"
         android:textColor="@color/material_dynamic_secondary10"
-        android:textSize="18sp"
+        android:textSize="16sp"
         tools:ignore="MissingConstraints,TextSizeCheck"
         tools:layout_editor_absoluteX="212dp"
         tools:layout_editor_absoluteY="172dp" />
@@ -128,7 +128,7 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Technology and IT Job"
         android:textColor="@color/material_dynamic_secondary10"
-        android:textSize="18sp"
+        android:textSize="16sp"
         tools:ignore="MissingConstraints,TextSizeCheck"
         tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="398dp" />
@@ -145,7 +145,7 @@
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:contentDescription="delete12"
-        app:srcCompat="@android:drawable/ic_menu_delete"
+        app:srcCompat="@drawable/baseline_job_apply"
         tools:ignore="MissingConstraints,ImageContrastCheck"
         tools:layout_editor_absoluteX="126dp"
         tools:layout_editor_absoluteY="332dp" />
@@ -155,7 +155,7 @@
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:contentDescription="delete33"
-        app:srcCompat="@android:drawable/ic_menu_delete"
+        app:srcCompat="@drawable/baseline_job_apply"
         tools:ignore="MissingConstraints,ImageContrastCheck"
         tools:layout_editor_absoluteX="126dp"
         tools:layout_editor_absoluteY="555dp" />
@@ -165,10 +165,10 @@
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:contentDescription="delete44"
-        app:srcCompat="@android:drawable/ic_menu_delete"
+        app:srcCompat="@drawable/baseline_job_apply"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="325dp"
-        tools:layout_editor_absoluteY="545dp" />
+        tools:layout_editor_absoluteY="555dp" />
 
     <ImageButton
         android:id="@+id/edit1"
@@ -209,14 +209,14 @@
         app:srcCompat="@android:drawable/ic_menu_edit"
         tools:ignore="MissingConstraints,ImageContrastCheck"
         tools:layout_editor_absoluteX="255dp"
-        tools:layout_editor_absoluteY="545dp" />
+        tools:layout_editor_absoluteY="555dp" />
 
     <ImageButton
         android:id="@+id/del2"
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:contentDescription="delete22"
-        app:srcCompat="@android:drawable/ic_menu_delete"
+        app:srcCompat="@drawable/baseline_job_apply"
         tools:ignore="MissingConstraints,ImageContrastCheck"
         tools:layout_editor_absoluteX="325dp"
         tools:layout_editor_absoluteY="333dp" />
