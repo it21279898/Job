@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.job.EditJob
 import com.example.job.R
+import com.example.job.Tn_jobApplicationHome
 
 class JobListAdapter(private val jobList: MutableList<Job>) :
     RecyclerView.Adapter<JobListAdapter.JobViewHolder>() {
@@ -30,6 +31,11 @@ class JobListAdapter(private val jobList: MutableList<Job>) :
             intent.putExtra("jobDescription", currentJob.description)
             holder.itemView.context.startActivity(intent)
         }
+        holder.jobApplication.setOnClickListener{
+            val intent= Intent(holder.itemView.context,Tn_jobApplicationHome::class.java)
+            holder.itemView.context.startActivity(intent)
+        }
+
     }
 
     override fun getItemCount() = jobList.size
@@ -38,6 +44,7 @@ class JobListAdapter(private val jobList: MutableList<Job>) :
         val jobTitleTextView: TextView = itemView.findViewById(R.id.job_title_text_view)
         val jobEditTemplate: TextView = itemView.findViewById(R.id.edit_btn_template)
         val jobDescription: TextView = itemView.findViewById(R.id.job_template_description)
+        val jobApplication: TextView = itemView.findViewById(R.id.apply_btn_template)
 
     }
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Tn_jobApplicationHome"
-    android:background="#00C988">
+    android:background="@color/primary_color">
 
     <TextView
         android:id="@+id/tv_header"
@@ -19,15 +19,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="160dp"-->
+<!--        android:layout_height="160dp"-->
+<!--        android:layout_marginStart="228dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="?android:attr/actionModeFindDrawable" />-->
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="228dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="208dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?android:attr/actionModeFindDrawable" />
+        app:srcCompat="@drawable/illustration_started"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/tv_tv6"
@@ -39,36 +48,39 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32" />
+        app:layout_constraintVertical_bias="0.109" />
 
     <Button
         android:id="@+id/btn_View"
-        android:layout_width="230dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="492dp"
+        android:layout_width="348dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="596dp"
         android:backgroundTint="#FFFFFF"
         android:text="@string/btn_fetch"
         android:textColor="#00C988"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_Apply"
-        android:layout_width="230dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="372dp"
+        android:layout_width="345dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="504dp"
         android:backgroundTint="#FFFFFF"
         android:text="@string/btn_apply"
         android:textColor="#00C988"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_View"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

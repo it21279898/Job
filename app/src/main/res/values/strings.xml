@@ -86,7 +86,7 @@
     <string name="delete">Delete</string>
 
     <string name="tv_header">Quick Job</string>
-    <string name="tv_tv1">Did you find your dream job</string>
+    <string name="tv_tv1">Did you find your dream job?</string>
     <string name="btn_apply">APPLY NOW</string>
     <string name="btn_fetch">VIEW APPLICANTS</string>
     <string name="tv_title">Job Application</string>
@@ -122,6 +122,7 @@
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="btn_cvapply">cvapply</string>
+    <string name="btn_Apply">Apply</string>
 
 
 </resources>
