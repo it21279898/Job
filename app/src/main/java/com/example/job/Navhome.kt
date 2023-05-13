@@ -17,7 +17,7 @@ class Navhome : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navhome)
-        setContentView(R.layout.activity_all_categories)
+        setContentView(R.layout.activity_allcategory)
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayout)
         val navView : NavigationView = findViewById(R.id.nav_view)

@@ -6,18 +6,19 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import com.example.job.databinding.ActivityHomeBinding
+import com.example.job.databinding.ActivityNavhomeBinding
 import com.google.firebase.auth.FirebaseAuth
 
 
 class HomeActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityHomeBinding
+    private lateinit var binding: ActivityNavhomeBinding
     private lateinit var auth: FirebaseAuth
 
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityHomeBinding.inflate(layoutInflater)
+        binding = ActivityNavhomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.btnTax.setOnClickListener{
@@ -30,8 +31,8 @@ class HomeActivity : AppCompatActivity() {
         binding.btnEmp.setOnClickListener{
             startActivity(Intent(this,EmpMainActivity::class.java))
         }
-        binding.btnApply.setOnClickListener{
-            startActivity(Intent(this,Tn_jobApplicationHome::class.java))
+        binding.btnCat1.setOnClickListener{
+            startActivity(Intent(this,AllJobs::class.java))
         }
 
 //        btnApply = findViewById(R.id.btn_testApply)
@@ -43,12 +44,12 @@ class HomeActivity : AppCompatActivity() {
 
         auth= FirebaseAuth.getInstance()
 
-        // Redirect to all jobs
-        val redirectToAllJobs = findViewById<Button>(R.id.btnAllJobs);
-        redirectToAllJobs.setOnClickListener {
-            val intent = Intent(this, AllJobs::class.java);
-            startActivity(intent);
-        }
+//        // Redirect to all jobs
+//        val redirectToAllJobs = findViewById<Button>(R.id.btnAllJobs);
+//        redirectToAllJobs.setOnClickListener {
+//            val intent = Intent(this, AllJobs::class.java);
+//            startActivity(intent);
+//        }
 
         binding.btnLogout.setOnClickListener{
             auth.signOut()

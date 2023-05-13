@@ -29,18 +29,18 @@
 
             tools:ignore="DuplicateIds" />
 
-        <TextView
-            android:id="@+id/textUsername"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="56dp"
-            android:text="@string/sandu"
-            android:textColor="#795548"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@id/textHello"
-            app:layout_constraintTop_toTopOf="parent" />
+<!--        <TextView-->
+<!--            android:id="@+id/textUsername"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="4dp"-->
+<!--            android:layout_marginTop="56dp"-->
+<!--            android:text="@string/sandu"-->
+<!--            android:textColor="#795548"-->
+<!--            android:textSize="25sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintStart_toEndOf="@id/textHello"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
         <ImageView
             android:id="@+id/imageMenu"
@@ -111,17 +111,20 @@
 
             <LinearLayout
                 android:id="@+id/layoutFunction"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginStart="20dp"
+                android:layout_width="201dp"
+                android:layout_height="189dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/white_rectangle_background"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/layoutStatus"
                 app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toStartOf="@+id/layoutcal"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/layoutFunction"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
@@ -130,7 +133,7 @@
                     android:layout_margin="8dp"
                     android:contentDescription="@string/apply_category"
                     android:padding="8dp"
-                    android:src="@drawable/category"/>
+                    android:src="@drawable/category" />
 
                 <Button
                     android:id="@+id/btnCat1"
@@ -140,7 +143,7 @@
                     android:text="@string/categories"
                     android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -148,13 +151,19 @@
                 android:id="@+id/layoutcal"
                 android:layout_width="194dp"
                 android:layout_height="194dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/white_rectangle_background"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="15dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="214dp"
-                tools:layout_editor_absoluteY="32dp">
+                app:layout_constraintBottom_toTopOf="@+id/layoutPay"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/layoutFunction"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
 
                 <ImageView
                     android:layout_width="100dp"
@@ -165,7 +174,7 @@
                     android:src="@drawable/tax" />
 
                 <Button
-                    android:id="@+id/btnTax1"
+                    android:id="@+id/btn_Tax"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -178,15 +187,15 @@
 
             <LinearLayout
                 android:id="@+id/layoutStatus"
-                android:layout_width="206dp"
-                android:layout_height="197dp"
+                android:layout_width="200dp"
+                android:layout_height="189dp"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/white_rectangle_background"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="15dp"
                 app:layout_constraintDimensionRatio="H,1:1"
-                app:layout_constraintEnd_toStartOf="@id/layoutcal"
+                app:layout_constraintEnd_toStartOf="@+id/layoutPay"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/layoutFunction">
 
@@ -199,10 +208,11 @@
                     android:src="@drawable/emp" />
 
                 <Button
-                    android:id="@+id/btnEmp1"
+                    android:id="@+id/btn_Emp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:src="@drawable/emp"
                     android:text="Employee Add"
                     android:textColor="@color/white"
                     android:textSize="16sp"
@@ -212,16 +222,17 @@
 
             <LinearLayout
                 android:id="@+id/layoutPay"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="190dp"
+                android:layout_height="185dp"
                 android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
                 android:background="@drawable/white_rectangle_background"
                 android:gravity="center"
                 android:orientation="vertical"
-                app:layout_constraintStart_toEndOf="@+id/layoutFunction"
                 android:padding="15dp"
                 app:layout_constraintDimensionRatio="H,1:1"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/layoutFunction"
                 app:layout_constraintTop_toBottomOf="@id/layoutcal">
 
                 <ImageView
@@ -234,14 +245,14 @@
                     tools:ignore="ImageContrastCheck" />
 
                 <Button
-                    android:id="@+id/btnLogO1"
+                    android:id="@+id/btn_logout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="Logout"
                     android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
 
             </LinearLayout>

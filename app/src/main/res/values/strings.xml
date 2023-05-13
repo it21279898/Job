@@ -123,6 +123,7 @@
     <string name="close">Close</string>
     <string name="btn_cvapply">cvapply</string>
     <string name="btn_Apply">Apply</string>
+    <string name="btn_cv">CREATE CV</string>
 
 
 </resources>
